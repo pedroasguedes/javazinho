@@ -29,7 +29,8 @@ if(numeros[i] < m){
 // Verificar se um campo está vazio e alertar o ususario
 function verificarVazio(controle){
 if(controle == "" || controle ==null){
-alert("Este controle não pode ficar vazio");
+alert("O campo"+controle.id+"Não pode ser vazio");
+controle.setFocus();
 }
 }
 function dataHora(){
