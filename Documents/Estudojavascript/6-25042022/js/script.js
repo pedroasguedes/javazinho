@@ -1,7 +1,7 @@
 function carregarFilmes(){
 
 // fazer o carregadomento da url com filme
-// vamos usar o comando fetcj para localizar e 
+// vamos usar o comando fetch para localizar e 
 // carregar os fil,es e exibir em pagina html
 
 fetch("https://api.themoviedb.org/3/movie/popular?api_key=e8ee1b7136ab091a2fb872089bf3c840&language=pt-BR-US&page=1")
