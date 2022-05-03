@@ -1,0 +1,183 @@
+:root {
+  --default-green: #73007e;
+  --light-green: #73007e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Utility Classes */
+.btn-primary {
+  background: var(--default-green);
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: all 300ms ease;
+}
+
+.btn-primary:hover {
+  background: var(--light-green);
+  cursor: pointer;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  border-radius: 30px;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar .navbar-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+#navbar .navbar-container ul {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+}
+
+#navbar .navbar-container ul li {
+  padding: 0 20px;
+  transition: all 300ms ease;
+}
+
+#navbar .navbar-container ul li:hover {
+  color: #73007e;
+  cursor: pointer;
+}
+
+#navbar .navbar-container ul li:nth-child(3) {
+  border-right: 1px solid blueviolet;
+}
+
+/* Showcase */
+#showcase {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background: url("/img/musica.webp") center center/cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#showcase .showcase-container h2 {
+  font-size: 5rem;
+}
+
+#showcase .showcase-container p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+#footer {
+  background: black;
+  color: rgb(255, 253, 253);
+  padding: -50px 0px;
+}
+
+/* Footer Socials */
+.socials {
+  display: flex;
+}
+
+.socials i {
+  margin: 0 20px;
+  font-size: 1.7rem;
+  transition: all 300ms ease;
+}
+
+.socials i:hover {
+  color: var(--default-green);
+  cursor: pointer;
+}
+
+#menu-premium {
+  position: absolute;
+  right: 500px;
+  top: 126px;
+  background-color: #faf8fa;
+  text-align: center;
+  font-family: arial;
+  font-size: 10pt;
+  color: #73007e;
+}
+
+* {
+  box-sizing: border-box;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  background: crimson;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 6px 10px;
+}
+.popup-wrapper {
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.popup {
+  font-family: arial;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10% auto;
+  padding: 20px;
+  background: white;
+  position: relative;
+}
+.popup a {
+  color: white;
+  cursor: pointer;
+  padding: 6 px 10px;
+  text-decoration: none;
+  background: #73007e;
+}
+.popup close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
