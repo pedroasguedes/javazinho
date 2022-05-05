@@ -11,42 +11,27 @@
 		<title>PeguMusic</title>
 	</head>
 	<body>
-<!-- popup -->
-<button>Clique Aqui</button>
- 
-     <div class="popup-wrapper">
-        <div class="popup">
-            <div class="popup-close">x</div>
-        <div class="popup-content">
-            <h2>Planos Premium</h2>
-            <p>Escute Em Qualquer Lugar</p>
-            <a class="pupup-link" href="#">Saiba mais </a>
-         </div>
-        </div> 
-     </div>
-
-
-
+<!-- inicio do contato -->
+		<main>
+			
+		 
+			
+		 </main>
 		<!-- Navbar -->
 		<navbar id="navbar">
 			<div class="navbar-container">
 				<img src="img/musica-de-fogo_501790-58.webp" alt="" class="logo" />
 				<ul class="navbar-items">
-					<li class="navbar-item" onclick = "premium()">Premium</li>
-					<li class="navbar-item">Ajuda</li>	
-                    <li class="navbar-item"></li>								
-					<li class="navbar-item">Entrar</li>
+					
+					<li class="navbar-item" onclick="contato()">Contato</li>	                   							
+					<li class="navbar-item" onclick="login()">Login</li>
+					<li class="navbar-item"></li>
+					<li class="navbar-item" ><a href="sobre.html">Sobre</a></li>
+
 				</ul>
 			</div>
 		</navbar>
-        <div id="menu-premium">
-            Premium de 3 meses
-            R$:23,99
-            <p></p>
-            Premium de 12 meses
-            R$:53,99
-            
-        </div>
+        
 
 
 
@@ -58,7 +43,7 @@
 				<p>
 					Ouça Suas Músicas Aqui 
 				</p>
-				<button class="btn-primary">Seja Premium</button>
+				<button class="btn-primary" onclick="login()">Login</button>
 			</div>
 		</div>
 
@@ -75,15 +60,53 @@
 					<i class="fab fa-facebook-f"></i>
 				</div>
 			</div>
-			<div class="footer-info">
-				<ul class="footer-info-items">
-					<li class="footer-info-item"></li>
-					<li class="footer-info-item"></li>
-					<li class="footer-info-item"></li>
-					<li class="footer-info-item"></li>
-					<li class="footer-info-item"></li>
-				</ul>
+			<form action="" id="pag-contato" onsubmit="fecharcontato()">
+				<input type="text" placeholder="Nome Completo" required>
+				<input type="email"placeholder="E-mail" required>
+				<input type="tel"placeholder="Telefone">
+				<select name="" id="">
+		  
+				   <option value="Selecione">Selecione</option>
+				   <option value="Sugestão">Sugestão</option>
+				   <option value="Elogio">Elogio</option>
+				   <option value="Duvida">Duvida</option>
+				   <option value="Critica">Critica</option>
+		  
+				</select>
+				
+				
+				
+				</textarea>
+		  
+				</textarea>
+				
+				<input type="submit" value="Enviar">
+			   
+			   </form>
 
+<!-- --------------------------------------------------------------------------------------------------------- -->
+			   <form action="" id="pag-login" onsubmit="fecharlogin()">
+				<input type="text" placeholder="Nome Completo" required>
+				<input type="email"placeholder="E-mail" required>
+				
+				<select name="" id="">
+		  
+				   <option value="Selecione">Selecione</option>
+				   <option value="Sugestão">Premium R$:53,99</option>
+				   <option value="Elogio">Standard R$:23,99</option>				   
+				   <option value="Elogio">Free</option>
+				</select>
+				
+				
+				
+				</textarea>
+		  
+				</textarea>
+				
+				<input type="submit" value="Login">
+			   
+			   </form>
+<!-- =============================================================================================================== -->
 				<div class="rights">
 					<div class="country">
 						<p></p>
