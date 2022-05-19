@@ -7,6 +7,13 @@ export default function Container(){
 
 // vamos o estado inicial dos produtos,ou seja,
 //quais dados existem dentro do objeto produtos
+const [mensagem, setMensagem] = useState([
+    {
+    titulo:"",
+    autor:"",
+    mensagem:""
+}
+])
 const [produtos, setProduto] = useState([ 
     {
 id:"",
@@ -29,12 +36,16 @@ fetch("http://10.26.49.54:4000/api/services/produto/listar")
 
 },[])
 
+const mudarDados =(content)=>{
+setMensagem(content);
+
+};
 
     return(
         <div className="container">
 
-<Mensagem/>
-<Conteudo dados = {produtos}/>
+<Mensagem info={mensagem}/>
+<Conteudo dados = {produtos} acao = {mudarDados}/>
 </div>
     );
 }
